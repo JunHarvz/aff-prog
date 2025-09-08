@@ -51,7 +51,8 @@ function Dashboard() {
       <div className="mt-6">
         <p>Your referral link:</p>
         <code className="bg-gray-200 p-2 block">
-          http://localhost:5174/product/1?ref={referralCode}
+          {/* http://localhost:5174/product/1?ref={referralCode} */}
+          https://aff-prog-backend.onrender.com/product/1?ref={referralCode}
         </code>
       </div>
 
