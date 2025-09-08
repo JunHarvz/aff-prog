@@ -8,7 +8,9 @@ function AdminDashboard() {
 
   useEffect(() => {
     const fetchAffiliates = async () => {
-      const res = await axios.get("http://localhost:5000/api/admin/affiliates", {
+      // const res = await axios.get("http://localhost:5000/api/admin/affiliates", 
+      const res = await axios.get("https://aff-prog-backend.onrender.com/api/admin/affiliates", 
+      {
         headers: { Authorization: `Bearer ${token}` }
       });
       setAffiliates(res.data);

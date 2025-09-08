@@ -8,7 +8,8 @@ function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/api/auth/register", form);
+    // await axios.post("http://localhost:5000/api/auth/register", form);
+    await axios.post("https://aff-prog-backend.onrender.com/api/auth/register", form);
     navigate("/");
   };
 

@@ -9,7 +9,9 @@ function Dashboard() {
 
   useEffect(() => {
     const fetchStats = async () => {
-      const res = await axios.get("http://localhost:5000/api/affiliate/stats", {
+      // const res = await axios.get("http://localhost:5000/api/affiliate/stats",
+      const res = await axios.get("https://aff-prog-backend.onrender.com/api/affiliate/stats", 
+      {
         headers: { Authorization: `Bearer ${token}` }
       });
       setStats(res.data);
